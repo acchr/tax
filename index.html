@@ -24,90 +24,7 @@
             </ul>
         </div>
 
-        <!-- Tax Calculation Explanation -->
-        <div class="explanation-section">
-            <h2>💱 How Tax is Calculated - Step by Step</h2>
-            
-            <div class="steps-grid">
-                <div class="step-card">
-                    <div class="step-number">1</div>
-                    <h3>Start with Gross Income</h3>
-                    <p>Total income from all sources: employment, business, pensions, rental income, etc.</p>
-                </div>
-
-                <div class="step-card">
-                    <div class="step-number">2</div>
-                    <h3>Subtract Exempt Income</h3>
-                    <p><strong>NOT taxable:</strong></p>
-                    <ul>
-                        <li>✓ Dividend income (100% exempt)</li>
-                        <li>✓ Interest income (generally exempt)</li>
-                        <li>✓ Child allowances</li>
-                        <li>✓ Student grants</li>
-                    </ul>
-                </div>
-
-                <div class="step-card">
-                    <div class="step-number">3</div>
-                    <h3>Apply Standard Deductions</h3>
-                    <p><strong>Limited to 1/5 (20%) of income:</strong></p>
-                    <ul>
-                        <li>✓ Social insurance contributions</li>
-                        <li>✓ Pension fund contributions</li>
-                        <li>✓ Life insurance premiums (max 7% of coverage)</li>
-                        <li>✓ Medical insurance premiums</li>
-                        <li>✓ GHS contributions</li>
-                    </ul>
-                </div>
-
-                <div class="step-card">
-                    <div class="step-number">4</div>
-                    <h3>Apply Progressive Tax Brackets</h3>
-                    <p>Tax brackets include €22,000 tax-free allowance (0% rate) + progressive rates</p>
-                    <div class="example-box">
-                        <strong>Example:</strong> If net income = €50,000<br>
-                        • First €22,000 @ 0% = €0<br>
-                        • Next €10,000 (€22,001-€32,000) @ 20% = €2,000<br>
-                        • Next €10,000 (€32,001-€42,000) @ 25% = €2,500<br>
-                        • Next €8,000 (€42,001-€50,000) @ 30% = €2,400<br>
-                        <strong>Total Base Tax = €6,900</strong>
-                    </div>
-                </div>
-
-                <div class="step-card">
-                    <div class="step-number">5</div>
-                    <h3>Apply Personal Deductions</h3>
-                    <p><strong>Reduce taxable income (subject to income criteria):</strong></p>
-                    <ul>
-                        <li>✓ Children deductions (€1,000-€1,500 each)</li>
-                        <li>✓ Housing costs (up to €2,000)</li>
-                        <li>✓ Green investments (up to €1,000)</li>
-                        <li>✓ Home insurance (up to €500)</li>
-                    </ul>
-                </div>
-
-                <div class="step-card">
-                    <div class="step-number">6</div>
-                    <h3>Calculate Final Tax</h3>
-                    <p>Apply progressive tax brackets to the income after all deductions</p>
-                </div>
-            </div>
-
-            <div class="important-note">
-                <h3>🤑 Important Distinction:</h3>
-                <div class="note-content">
-                    <div class="note-item">
-                        <strong>Standard Deductions (Step 3):</strong>
-                        <p>Reduce your <em>taxable income</em>. Limited to 20% of income (1/5 rule). Includes social insurance, pension contributions, life insurance, medical insurance.</p>
-                    </div>
-                    <div class="note-item">
-                        <strong>Personal Deductions (Step 5):</strong>
-                        <p>Also reduce your <em>taxable income</em>. Subject to income eligibility criteria. Includes children, housing, green investments, home insurance.</p>
-                    </div>
-                </div>
-                <p style="margin-top: 15px; text-align: center; font-weight: 600;">Both types of deductions reduce income BEFORE tax is calculated, resulting in lower tax liability.</p>
-            </div>
-        </div>
+       
 
         <form id="taxForm">
             <!-- Personal Information -->
@@ -323,6 +240,91 @@
             <div class="eligibility-section">
                 <h3>✅ Eligibility Status</h3>
                 <div id="eligibilityStatus"></div>
+            </div>
+        </div>
+
+         <!-- Tax Calculation Explanation -->
+         <div class="explanation-section">
+            <h2>💱 How Tax is Calculated - Step by Step</h2>
+            
+            <div class="steps-grid">
+                <div class="step-card">
+                    <div class="step-number">1</div>
+                    <h3>Start with Gross Income</h3>
+                    <p>Total income from all sources: employment, business, pensions, rental income, etc.</p>
+                </div>
+
+                <div class="step-card">
+                    <div class="step-number">2</div>
+                    <h3>Subtract Exempt Income</h3>
+                    <p><strong>NOT taxable:</strong></p>
+                    <ul>
+                        <li>✓ Dividend income (100% exempt)</li>
+                        <li>✓ Interest income (generally exempt)</li>
+                        <li>✓ Child allowances</li>
+                        <li>✓ Student grants</li>
+                    </ul>
+                </div>
+
+                <div class="step-card">
+                    <div class="step-number">3</div>
+                    <h3>Apply Standard Deductions</h3>
+                    <p><strong>Limited to 1/5 (20%) of income:</strong></p>
+                    <ul>
+                        <li>✓ Social insurance contributions</li>
+                        <li>✓ Pension fund contributions</li>
+                        <li>✓ Life insurance premiums (max 7% of coverage)</li>
+                        <li>✓ Medical insurance premiums</li>
+                        <li>✓ GHS contributions</li>
+                    </ul>
+                </div>
+
+                <div class="step-card">
+                    <div class="step-number">4</div>
+                    <h3>Apply Progressive Tax Brackets</h3>
+                    <p>Tax brackets include €22,000 tax-free allowance (0% rate) + progressive rates</p>
+                    <div class="example-box">
+                        <strong>Example:</strong> If net income = €50,000<br>
+                        • First €22,000 @ 0% = €0<br>
+                        • Next €10,000 (€22,001-€32,000) @ 20% = €2,000<br>
+                        • Next €10,000 (€32,001-€42,000) @ 25% = €2,500<br>
+                        • Next €8,000 (€42,001-€50,000) @ 30% = €2,400<br>
+                        <strong>Total Base Tax = €6,900</strong>
+                    </div>
+                </div>
+
+                <div class="step-card">
+                    <div class="step-number">5</div>
+                    <h3>Apply Personal Deductions</h3>
+                    <p><strong>Reduce taxable income (subject to income criteria):</strong></p>
+                    <ul>
+                        <li>✓ Children deductions (€1,000-€1,500 each)</li>
+                        <li>✓ Housing costs (up to €2,000)</li>
+                        <li>✓ Green investments (up to €1,000)</li>
+                        <li>✓ Home insurance (up to €500)</li>
+                    </ul>
+                </div>
+
+                <div class="step-card">
+                    <div class="step-number">6</div>
+                    <h3>Calculate Final Tax</h3>
+                    <p>Apply progressive tax brackets to the income after all deductions</p>
+                </div>
+            </div>
+
+            <div class="important-note">
+                <h3>🤑 Important Distinction:</h3>
+                <div class="note-content">
+                    <div class="note-item">
+                        <strong>Standard Deductions (Step 3):</strong>
+                        <p>Reduce your <em>taxable income</em>. Limited to 20% of income (1/5 rule). Includes social insurance, pension contributions, life insurance, medical insurance.</p>
+                    </div>
+                    <div class="note-item">
+                        <strong>Personal Deductions (Step 5):</strong>
+                        <p>Also reduce your <em>taxable income</em>. Subject to income eligibility criteria. Includes children, housing, green investments, home insurance.</p>
+                    </div>
+                </div>
+                <p style="margin-top: 15px; text-align: center; font-weight: 600;">Both types of deductions reduce income BEFORE tax is calculated, resulting in lower tax liability.</p>
             </div>
         </div>
 
